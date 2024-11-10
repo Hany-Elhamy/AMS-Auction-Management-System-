@@ -1,0 +1,66 @@
+.auctions-view-container {
+    max-height: inherit;
+    background-color: white;
+    border-radius: 0.375rem;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.auctions-table-container {
+    max-height: 90%;
+    overflow-y: scroll;
+}
+
+.auctions-table {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 0.375rem;
+}
+
+.auctions-table thead td{
+    position: sticky;
+    top: 0;
+    background-color: #f8f8f8;
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+}
+
+.auctions-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.auctions-table a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.auctions-table p {
+    margin: 0;
+}
+
+.auction-row {
+    text-decoration: none;
+    color: black;
+}
+
+.auction-row:hover td{
+    background-color: #f1f1f1;
+}
+
+.auction-price::after {
+    content: " LE"
+}
+
+.auctions-table td:first-child, 
+.auctions-table td:nth-child(3),
+.auctions-table td:nth-child(5)
+{
+    width: 80px;
+}

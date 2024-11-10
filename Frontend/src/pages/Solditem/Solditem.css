@@ -1,0 +1,79 @@
+.margin-left
+{
+  margin-left:100px;
+}
+.sold h1{
+  color: aliceblue;
+  margin-left: 500px;
+  text-transform: uppercase;
+}
+.sold h1:hover{
+  color: goldenrod;
+}
+.checked {
+  color: orange;
+}
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    float: left;
+    margin: 25px;
+  
+  
+  }
+
+  .flip-card-front img{
+    width:300px;
+    height: 300px;
+    box-shadow: 3px 3px 15px rgb(117, 236, 242);
+  }
+  .flip-card-back p{
+    font-weight:bold ;
+  }
+  .back2{
+    font:italic bold 20px 'Dancing Script', cursive;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+ 
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  
+  }
+  
+  .flip-card-back {
+    background-color: #0a344f;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .clear
+  {
+    clear: both;
+  }
+
+  body{
+    background: #020222;
+  }

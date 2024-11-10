@@ -1,0 +1,192 @@
+/* header{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+  } */ 
+   /* header .nav-bar{
+    position:relative ;
+    background:rgba(255,255,255,0.1) ;
+    backdrop-filter: blur(20px);
+    height: 4em;
+    border-bottom:1px solid rgba(255,255,255,0.1) ;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    transition: 0.5s ease;
+  } */
+
+  .h-10 {
+    height: 9vh;
+}
+.navbar-dark {
+    background-color: black;
+  }
+  .navbar {
+    background-color: black !important;
+  }
+    
+
+
+
+.main-header{
+    background-color: #000116;
+    color : #ffd52d ;
+    display : flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center; 
+    max-width: 100%;
+    /* position:relative ;
+    background:rgba(255,255,255,0.1) ;
+    backdrop-filter: blur(20px);
+    height: 4em;
+    border-bottom:1px solid rgba(255,255,255,0.1) ;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    transition: 0.5s ease; */
+}
+
+.main-header .logo{
+    width: 20%;
+}
+
+.main-header .logo img{
+    width: 100px;
+    height: 100px;
+    object-fit:contain;
+}
+
+.main-header nav{
+    width : 80%;
+}
+
+.main-header nav ul{
+    list-style-type: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: 24px bold;
+    /* color: aliceblue;
+    font-size: 1em;
+    text-decoration: none; */
+}
+
+.main-header nav ul li{
+    display:inline-block;
+    padding: 0 15px;
+}
+
+.main-header nav ul li a{
+    color: #ffd52d;
+    text-decoration: none;
+    /* color: aliceblue;
+    font-size: 1em;
+    text-decoration: none; */
+
+}
+
+.main-header nav ul li a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+/* .main-header nav ul li a:not(:last-child){
+  margin-right: 50px;
+} */
+
+
+
+
+.scroll-indicator-container{
+    width:100% ;
+    height: 5px;
+  }
+  .scroll-indicator-bar{
+    background:#199fff ;
+    width: 100%;
+    height: 100%;
+    box-shadow:  0 5px 25px #199fff, 
+                 0 5px 50px #199fff, ;
+  }
+
+
+  /*=====Scroll bar=========*/
+  ::-webkit-scrollbar{
+    background: #fff;
+    /* width: 11px; */
+    width: 0px;
+    border-radius:2em ;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #282f4e ;
+    width: 100%;
+    border-radius: 2em;
+  }
+
+  ::-webkit-scrollbar-thumb:hover{
+    background: #454f6d;
+  }
+  /*===============scroll indicator bar=======*/
+  .scroll-indicator-container{
+    width:100% ;
+    height: 5px;
+  }
+  .scroll-indicator-bar{
+    background:#199fff ;
+    width: 100%;
+    height: 100%;
+    box-shadow:  0 5px 25px #199fff, 
+                 0 5px 50px #199fff, ;
+  }
+
+
+  /*==========scroll bar=========*/
+  #scrollpath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+  }
+  #progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    animation: animate 5s linear infinite;
+  }
+  @keyframes animate{
+    0%,100%{
+      filter: hue-rotate(0deg);
+    }
+    50%{
+      filter: hue-rotate(360deg);
+    }
+  }
+  #progressbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    filter:blur(30px)
+  }
+  #progressbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top,#008aff,#00ffe7);
+    filter:blur(30px)
+  }

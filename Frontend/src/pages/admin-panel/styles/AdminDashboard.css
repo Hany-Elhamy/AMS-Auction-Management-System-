@@ -1,0 +1,90 @@
+:root {
+    --lighter: #fdfdfd;
+    --light: #f1f1f1;
+    --mid: #c5c5c5;
+    --dark: #919191;
+    --darkest: #464646;
+}
+
+.dashboard-app {
+    background-color: var(--light);
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: auto 1fr;
+}
+
+.dashboard-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--mid);
+    color: var(--dark);
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.dashboard-header a {
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.dashboard-header a:hover h1{
+    color: var(--light);
+    font-weight: 700;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+}
+
+.monsh {
+    color: var(--darkest);
+    font-weight: bolder;
+}
+
+.dashboard-aside {
+    border-right: 2px solid var(--mid);
+    background: var(--lighter);
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-button {
+    padding: 10px;
+    background-color: var(--light);
+    color: black;
+    font-size: 1rem;
+    text-align: left;
+    border: 0;
+    border-bottom: 2px solid var(--mid);
+}
+
+.dashboard-button:hover {
+    background-color: var(--mid);
+}
+
+.dashboard-content {
+    padding: 20px 20px 50px 20px;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.dashboard-logout {
+    margin-top: auto;
+    margin-bottom: 30px;
+    border: 0;
+    align-self: center;
+    font-weight: bold;
+    color: var(--darkest);
+    background-color: var(--mid);
+    border-radius: 0.375rem;
+    padding: 10px 20px;
+}
+
+.dashboard-logout:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
